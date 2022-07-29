@@ -35,7 +35,7 @@ void AgHudCustomTimer::Reset(void)
 
 int AgHudCustomTimer::Draw(float fTime)
 {
-  if (m_flTurnoff < gHUD.m_flTime || gHUD.m_iIntermission)
+  if (m_flTurnoff < gHUD.m_flTime)
   {
     gEngfuncs.pfnPlaySoundByName("fvox/bell.wav",1);
     Reset();
